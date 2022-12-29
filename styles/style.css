@@ -1,4 +1,4 @@
-/* CSS reser */
+/* CSS reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +13,58 @@
   --dark-brown: #322913;
   --light-brown: #977a38;
   --very-light-brown: #c9a24a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px 40px;
+  font-size: 22px;
+  background: var(--bright-yellow);
+}
+
+.logo {
+  width: auto;
+  height: 100%;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  color: var(--dark-brown);
+}
+
+.navbar ul li a:hover {
+  background: var(--very-light-brown);
+  color: white;
+}
+
+#home {
+  background: var(--bright-yellow);
+  min-height: 100vh;
+}
+
+#about {
+  background: var(--very-light-brown);
 }
