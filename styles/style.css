@@ -1,0 +1,16 @@
+/* CSS reser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General colors */
+:root {
+  --bright-yellow: #fbcb5d;
+  --light-yellow: #fde09e;
+  --very-light-yellow: #fef5df;
+  --dark-brown: #322913;
+  --light-brown: #977a38;
+  --very-light-brown: #c9a24a;
+}
