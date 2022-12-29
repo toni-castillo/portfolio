@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* General config */
@@ -100,7 +101,36 @@ header {
   color: var(--regular-brown)
 }
 
+#home .arrow-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -22px; /* Mitad del ancho del elemento */
+
+}
+
 /* About section */
 #about {
+  display: flex;
+  flex-direction: row;
+  font-size: x-large;
   background: var(--very-light-yellow);
+  padding: 5% 10%;
+}
+
+.about-text h3 {
+  color: var(--dark-brown);
+  font-size: 3rem;
+}
+
+.about-text p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  color: var(--regular-brown);
+}
+
+.about-img img {
+  width: 300px;
+  margin-top: 20%;
 }
