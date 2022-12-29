@@ -1,0 +1,106 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General config */
+:root {
+  --bright-yellow: #fbcb5d;
+  --light-yellow: #fcda8d;
+  --very-light-yellow: #fbe9bd;
+  --dark-brown: #50421d;
+  --regular-brown: #6c5b2d;
+  --light-brown: #977a38;
+  --very-light-brown: #c9a24a;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Header and navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px 40px;
+  font-size: 22px;
+  background: var(--bright-yellow);
+}
+
+.logo {
+  width: auto;
+  height: 100%;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  color: var(--dark-brown);
+}
+
+.navbar ul li a:hover {
+  background: var(--very-light-brown);
+  color: white;
+}
+
+/* Hello section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+  color: var(--dark-brown);
+  background: var(--bright-yellow);
+  min-height: calc(100vh - 100px);
+  padding: 0 20%;
+}
+
+#home .hi {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: var(--light-brown)
+}
+
+#home .title {
+  font-size: 4rem;
+}
+
+#home .title span {
+  font-weight: 100;
+  color: var(--light-brown)
+}
+
+#home .subtitle {
+  color: var(--regular-brown)
+}
+
+#home .description {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: var(--regular-brown)
+}
+
+/* About section */
+#about {
+  background: var(--very-light-yellow);
+}
