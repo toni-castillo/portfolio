@@ -23,6 +23,7 @@ body {
 
 .h3-titles {
   font-size: 3rem;
+  margin-bottom: 30px;
   color: var(--dark-brown);
 }
 
@@ -77,7 +78,7 @@ header {
   color: var(--dark-brown);
   background: var(--bright-yellow);
   min-height: calc(100vh - 100px);
-  padding: 5% 20%;
+  padding: 4% 20%;
 }
 
 #home .hi {
@@ -96,7 +97,6 @@ header {
 
 #home .description {
   width: 90%;
-  margin-top: 30px;
   margin-bottom: 40px;
   color: var(--regular-brown)
 }
@@ -138,7 +138,7 @@ header {
   flex-direction: row;
   font-size: x-large;
   background: var(--very-light-yellow);
-  padding: 5% 10%;
+  padding: 4% 10%;
 }
 
 .about-text p {
@@ -155,17 +155,33 @@ header {
 
 /* Projects section */
 #projects {
-  font-size: x-large;
+  display: grid;
+  font-size: 22px;
   background: var(--light-yellow);
-  padding: 5% 10%;
+  padding: 4% 10%;
+  justify-items: center;
 }
 
-#projects .projects-container {
+/* #projects h3 {
+  justify-items: flex-start;
+} */
+
+.projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 40px;
+  width: 100%;
   max-width: 1200px;
-  place-content: center;
+}
+
+.project-card img, h3, p {
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
 }
 
 
@@ -185,12 +201,15 @@ header {
 }
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  #home, #about {
-    padding: 5% 10%;
+  #home, #about, #projects {
+    padding: 4% 10%;
   }
   .about-img img {
     width: 250px;
     margin-top: 30%;
+  }
+  .projects-container {
+    grid-template-columns: 1fr; /* Una sola columna */
   }
 }
 
@@ -199,24 +218,12 @@ header {
   .h3-titles {
     font-size: 2rem;
   }
-  #home, #about {
+  #home, #about, #projects {
     font-size: x-large;
-    padding: 5% 5%;
+    padding: 4% 4%;
   }
 
-
-
-
-  #about {
-    display: flex;
-    flex-direction: row;
-    font-size: x-large;
-    background: var(--very-light-yellow);
-    padding: 5% 10%;
-  }
-
-
-  #projects {
+  .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
 }
