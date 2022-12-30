@@ -17,8 +17,32 @@
   --very-light-brown: #c9a24a;
 }
 
+::selection {
+  background-color: var(--regular-brown);
+  color: var(--very-light-yellow);
+}
+
 body {
   font-family: 'Space Grotesk', sans-serif;
+}
+
+.h2-titles {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: var(--dark-brown);
+}
+
+.social-media-icons {
+  margin-top: 20px;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social-media-icons svg:hover {
+  stroke: var(--dark-brown);
 }
 
 /* Header and navbar */
@@ -66,23 +90,23 @@ header {
 /* Hello section */
 #home {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: xx-large;
   color: var(--dark-brown);
   background: var(--bright-yellow);
   min-height: calc(100vh - 100px);
-  padding: 0 20%;
+  padding: 4% 15%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+  max-width: 1200px;
 }
 
 #home .hi {
-  margin-top: 40px;
   margin-bottom: 30px;
   color: var(--light-brown)
-}
-
-#home .title {
-  font-size: 4rem;
 }
 
 #home .title span {
@@ -96,17 +120,34 @@ header {
 
 #home .description {
   width: 90%;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--regular-brown)
 }
 
 #home .arrow-down {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -22px; /* Mitad del ancho del elemento */
+  margin-left: -22px; */
+  margin-top: 30px;
+}
 
+/* Hand animation */
+@keyframes hand-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(15.0deg) }
+  20% { transform: rotate(-9.0deg) }
+  30% { transform: rotate(15.0deg) }
+  40% { transform: rotate(-5.0deg) }
+  50% { transform: rotate(11.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.hand {
+  display: inline-block;
+  animation: hand-animation 4s linear infinite;
+  transform-origin: 70% 70%;
 }
 
 /* About section */
@@ -115,12 +156,8 @@ header {
   flex-direction: row;
   font-size: x-large;
   background: var(--very-light-yellow);
-  padding: 5% 10%;
-}
-
-.about-text h3 {
-  color: var(--dark-brown);
-  font-size: 3rem;
+  /* padding: 4% 10%; */
+  padding: 4% 15%;
 }
 
 .about-text p {
@@ -132,5 +169,101 @@ header {
 
 .about-img img {
   width: 300px;
-  margin-top: 20%;
+  margin-top: 30%;
+}
+
+/* Projects section */
+#projects {
+  display: grid;
+  font-size: 22px;
+  background: var(--light-yellow);
+  padding: 4% 15%;
+  /* padding: 4% 10%; */
+  /* justify-items: center; */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card img, h3, p {
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.project-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.project-icons svg:hover {
+  stroke: var(--dark-brown);
+}
+
+/* Contact section */
+#contact {
+  display: grid;
+  font-size: 22px;
+  font-size: xx-large;
+  color: var(--regular-brown);
+  background: var(--very-light-yellow);
+  padding: 4% 15%;
+}
+
+/* .contact-container {
+
+} */
+
+
+/* Footer */
+footer {
+  display: grid;
+  font-size: 22px;
+  background: var(--bright-yellow);
+  color: var(--light-brown);
+  padding: 2% 15%;
+}
+
+
+/* MEDIA QUERIES */
+/* Styles for computer screens */
+@media (min-width: 1024px) {
+
+}
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #home, #about, #projects {
+    padding: 4% 10%;
+  }
+  .about-img img {
+    width: 250px;
+    margin-top: 30%;
+  }
+  .projects-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+}
+
+/* Styles for smartphones */
+@media (max-width: 767px) {
+  .h3-titles {
+    font-size: 2rem;
+  }
+  #home, #about, #projects {
+    font-size: x-large;
+    padding: 4% 4%;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
 }
