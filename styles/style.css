@@ -21,7 +21,7 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.h3-titles {
+.h2-titles {
   font-size: 3rem;
   margin-bottom: 30px;
   color: var(--dark-brown);
@@ -72,13 +72,18 @@ header {
 /* Hello section */
 #home {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: xx-large;
   color: var(--dark-brown);
   background: var(--bright-yellow);
   min-height: calc(100vh - 100px);
-  padding: 4% 20%;
+  padding: 4% 15%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+  max-width: 1200px;
 }
 
 #home .hi {
@@ -114,6 +119,10 @@ header {
   margin-right: 20px;
 }
 
+.social-media-icons svg:hover {
+  stroke: var(--dark-brown);
+}
+
 /* Hand animation */
 @keyframes hand-animation {
   0% { transform: rotate( 0.0deg) }
@@ -138,7 +147,8 @@ header {
   flex-direction: row;
   font-size: x-large;
   background: var(--very-light-yellow);
-  padding: 4% 10%;
+  /* padding: 4% 10%; */
+  padding: 4% 15%;
 }
 
 .about-text p {
@@ -158,13 +168,10 @@ header {
   display: grid;
   font-size: 22px;
   background: var(--light-yellow);
-  padding: 4% 10%;
-  justify-items: center;
+  padding: 4% 15%;
+  /* padding: 4% 10%; */
+  /* justify-items: center; */
 }
-
-/* #projects h3 {
-  justify-items: flex-start;
-} */
 
 .projects-container {
   display: grid;
@@ -184,7 +191,14 @@ header {
   object-fit: cover;
 }
 
+.project-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+}
 
+.project-icons svg:hover {
+  stroke: var(--dark-brown);
+}
 
 /* Contact section */
 
