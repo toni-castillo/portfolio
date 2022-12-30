@@ -17,6 +17,11 @@
   --very-light-brown: #c9a24a;
 }
 
+::selection {
+  background-color: var(--regular-brown);
+  color: var(--very-light-yellow);
+}
+
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -25,6 +30,19 @@ body {
   font-size: 3rem;
   margin-bottom: 30px;
   color: var(--dark-brown);
+}
+
+.social-media-icons {
+  margin-top: 20px;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social-media-icons svg:hover {
+  stroke: var(--dark-brown);
 }
 
 /* Header and navbar */
@@ -102,7 +120,7 @@ header {
 
 #home .description {
   width: 90%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--regular-brown)
 }
 
@@ -112,15 +130,6 @@ header {
   left: 50%;
   margin-left: -22px; */
   margin-top: 30px;
-}
-
-.social-media-icons a {
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-.social-media-icons svg:hover {
-  stroke: var(--dark-brown);
 }
 
 /* Hand animation */
@@ -201,11 +210,28 @@ header {
 }
 
 /* Contact section */
+#contact {
+  display: grid;
+  font-size: 22px;
+  font-size: xx-large;
+  color: var(--regular-brown);
+  background: var(--very-light-yellow);
+  padding: 4% 15%;
+}
 
+/* .contact-container {
+
+} */
 
 
 /* Footer */
-
+footer {
+  display: grid;
+  font-size: 22px;
+  background: var(--bright-yellow);
+  color: var(--light-brown);
+  padding: 2% 15%;
+}
 
 
 /* MEDIA QUERIES */
