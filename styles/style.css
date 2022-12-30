@@ -163,7 +163,7 @@ header {
 .about-text p {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 100px;
+  margin-right: 50px;
   color: var(--regular-brown);
 }
 
@@ -241,7 +241,7 @@ footer {
 }
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  #home, #about, #projects {
+  #home, #about, #projects, #contact {
     padding: 4% 10%;
   }
   .about-img img {
@@ -258,11 +258,14 @@ footer {
   .h3-titles {
     font-size: 2rem;
   }
-  #home, #about, #projects {
+  #home, #about, #projects, #contact {
     font-size: x-large;
     padding: 4% 4%;
   }
-
+  .about-img img {
+    width: 150px;
+    margin-top: 30%;
+  }
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
