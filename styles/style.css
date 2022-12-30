@@ -152,24 +152,23 @@ header {
 
 /* About section */
 #about {
-  display: flex;
-  flex-direction: row;
   font-size: x-large;
   background: var(--very-light-yellow);
-  /* padding: 4% 10%; */
   padding: 4% 15%;
 }
 
-.about-text p {
+#about p {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 50px;
   color: var(--regular-brown);
 }
 
-.about-img img {
+.about-img {
+  float: right;
   width: 300px;
-  margin-top: 30%;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 /* Projects section */
@@ -244,10 +243,14 @@ footer {
   #home, #about, #projects, #contact {
     padding: 4% 10%;
   }
-  .about-img img {
+  
+  .about-img {
+    float: right;
     width: 250px;
-    margin-top: 30%;
+    margin-left: 2%;
+    margin-bottom: 2%;
   }
+
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
@@ -262,10 +265,16 @@ footer {
     font-size: x-large;
     padding: 4% 4%;
   }
-  .about-img img {
-    width: 150px;
-    margin-top: 30%;
+
+  #about p {
+    margin-right: 0;
   }
+
+  .about-img {
+    float: none;
+    width: 200px;
+  }
+
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
