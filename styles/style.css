@@ -21,6 +21,11 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+.h3-titles {
+  font-size: 3rem;
+  color: var(--dark-brown);
+}
+
 /* Header and navbar */
 header {
   display: flex;
@@ -72,17 +77,12 @@ header {
   color: var(--dark-brown);
   background: var(--bright-yellow);
   min-height: calc(100vh - 100px);
-  padding: 0 20%;
+  padding: 5% 20%;
 }
 
 #home .hi {
-  margin-top: 40px;
   margin-bottom: 30px;
   color: var(--light-brown)
-}
-
-#home .title {
-  font-size: 4rem;
 }
 
 #home .title span {
@@ -102,11 +102,34 @@ header {
 }
 
 #home .arrow-down {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -22px; /* Mitad del ancho del elemento */
+  margin-left: -22px; */
+  margin-top: 30px;
+}
 
+.social-media-icons a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Hand animation */
+@keyframes hand-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(15.0deg) }
+  20% { transform: rotate(-9.0deg) }
+  30% { transform: rotate(15.0deg) }
+  40% { transform: rotate(-5.0deg) }
+  50% { transform: rotate(11.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.hand {
+  display: inline-block;
+  animation: hand-animation 4s linear infinite;
+  transform-origin: 70% 70%;
 }
 
 /* About section */
@@ -118,11 +141,6 @@ header {
   padding: 5% 10%;
 }
 
-.about-text h3 {
-  color: var(--dark-brown);
-  font-size: 3rem;
-}
-
 .about-text p {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -132,5 +150,73 @@ header {
 
 .about-img img {
   width: 300px;
-  margin-top: 20%;
+  margin-top: 30%;
+}
+
+/* Projects section */
+#projects {
+  font-size: x-large;
+  background: var(--light-yellow);
+  padding: 5% 10%;
+}
+
+#projects .projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  place-content: center;
+}
+
+
+
+/* Contact section */
+
+
+
+/* Footer */
+
+
+
+/* MEDIA QUERIES */
+/* Styles for computer screens */
+@media (min-width: 1024px) {
+
+}
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #home, #about {
+    padding: 5% 10%;
+  }
+  .about-img img {
+    width: 250px;
+    margin-top: 30%;
+  }
+}
+
+/* Styles for smartphones */
+@media (max-width: 767px) {
+  .h3-titles {
+    font-size: 2rem;
+  }
+  #home, #about {
+    font-size: x-large;
+    padding: 5% 5%;
+  }
+
+
+
+
+  #about {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    background: var(--very-light-yellow);
+    padding: 5% 10%;
+  }
+
+
+  #projects {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
 }
