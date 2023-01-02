@@ -15,11 +15,26 @@
         <img src="./img/toni-castillo-logo-white.png" alt="Toni Castillo's logo">
       </a>
     <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="desktop-menu inactive">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <svg class="mobile-menu-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <line x1="4" y1="6" x2="20" y2="6" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+        <line x1="4" y1="18" x2="20" y2="18" />
+      </svg>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#about" class="mobile-menu-item">About</a></li>
+          <li><a href="#projects" class="mobile-menu-item">Projects</a></li>
+          <li><a href="#contact" class="mobile-menu-item">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!-- Hello section -->
@@ -213,5 +228,7 @@
   <footer>
     <p>Made with ❤ by Toni Castillo | 2022-2023</p>
   </footer>
+<!-- Script JavaScript -->
+<script src="./js/main.js"></script>
 </body>
 </html>
