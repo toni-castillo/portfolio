@@ -49,7 +49,7 @@ body {
   stroke: var(--dark-brown);
 }
 
-/* Header and navbar */
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -69,6 +69,7 @@ header {
   max-height: 100%;
 }
 
+/* Desktop menu */
 .desktop-menu ul {
   display: flex;
   flex-flow: row wrap;
@@ -91,44 +92,9 @@ header {
   color: white;
 }
 
-/* .mobile-menu-icon {
-  display: none;
-} */
-
-.mobile-menu {
-  position: absolute;
-  right: 40px;
-  top: 75px;
-  text-align: end;
-  background-color: var(--light-yellow);
-  padding: 20px;
-  border-radius: 8px;
-  /* border: 1px solid var(--light-brown); */
-}
-
-.mobile-menu ul {
-  list-style: none;
-}
-
-.mobile-menu ul li {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: var(--dark-brown);
-}
-
-.mobile-menu ul li a:hover {
-  color: var(--regular-brown);
-}
-
-
-/* --- */
-
+/* Mobile menu */
 .mobile-menu-icon {
-  display: inline-block;
+  display: none;
   cursor: pointer;
 }
 
@@ -151,7 +117,33 @@ header {
   transform: translate(0, -12px) rotate(45deg);
 }
 
-/* --- */
+.mobile-menu {
+  position: absolute;
+  right: 40px;
+  top: 75px;
+  text-align: end;
+  background-color: var(--light-yellow);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: var(--dark-brown);
+}
+
+.mobile-menu ul li a:hover {
+  color: var(--regular-brown);
+}
 
 
 /* Hello section */
@@ -328,6 +320,7 @@ footer {
 
 /* Styles for smartphones */
 @media (max-width: 767px) {
+
   .h3-titles {
     font-size: 2rem;
   }
@@ -351,5 +344,9 @@ footer {
 
   .desktop-menu {
     display: none;
+  }
+
+  .mobile-menu-icon {
+    display: inline-block;
   }
 }
