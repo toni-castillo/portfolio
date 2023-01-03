@@ -145,6 +145,28 @@ header {
   color: var(--regular-brown);
 }
 
+/*! Menu */
+.menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  color: var(--dark-brown);
+}
+
+.menu ul li a:hover {
+  background: var(--very-light-brown);
+  color: white;
+}
 
 /* Hello section */
 #home {
@@ -354,5 +376,37 @@ footer {
 
   .mobile-menu-icon {
     display: inline-block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 75px;
+    text-align: end;
+    background-color: var(--light-yellow);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .active {
+    display: block;
+  }
+  
+  .menu ul {
+    display: block;
+  }
+
+  .menu ul li a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0;
+    border-radius: 0;
+    color: var(--dark-brown);
+  }
+  
+  .menu ul li a:hover {
+    background: none;
+    color: var(--regular-brown);
   }
 }
