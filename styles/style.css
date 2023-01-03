@@ -124,6 +124,36 @@ header {
   color: var(--regular-brown);
 }
 
+
+/* --- */
+
+.mobile-menu-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  width: 35px;
+  height: 4px;
+  background-color: #977a38;
+  margin: 8px 0;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.change .bar-1 {
+  transform: translate(0, 12px) rotate(-45deg);
+}
+
+.change .bar-2 {opacity: 0;}
+
+.change .bar-3 {
+  transform: translate(0, -12px) rotate(45deg);
+}
+
+/* --- */
+
+
 /* Hello section */
 #home {
   display: flex;

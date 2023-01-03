@@ -10,4 +10,5 @@ for (item of mobileMenuItems) {
 
 function openCloseMobileMenu() {
   mobileMenu.classList.toggle('inactive');
+  mobileMenuIcon.classList.toggle('change');
 }
