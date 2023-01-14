@@ -257,12 +257,24 @@ header {
 
 /* Projects section */
 #projects {
-  display: grid;
   font-size: 22px;
   background: var(--light-yellow);
   padding: 4% 15%;
-  /* padding: 4% 10%; */
-  /* justify-items: center; */
+}
+
+.more-projects-link {
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+}
+
+.more-projects-link a {
+  text-decoration: none;
+  color: var(--light-brown);
+}
+
+.more-projects-link a:hover {
+  color: var(--dark-brown);
 }
 
 .projects-container {
@@ -285,6 +297,10 @@ header {
 
 .project-icons a {
   text-decoration: none;
+}
+
+.project-icons a svg {
+  margin-top: 10px;
   margin-right: 10px;
 }
 
