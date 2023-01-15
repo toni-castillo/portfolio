@@ -49,6 +49,24 @@ body {
   stroke: var(--dark-brown);
 }
 
+
+/* Text animation */
+@keyframes text-entry {
+  from {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.text-entry {
+  animation: text-entry 1s ease-in-out;
+}
+
+
 /* Header */
 header {
   display: flex;
