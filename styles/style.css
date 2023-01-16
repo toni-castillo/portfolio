@@ -24,6 +24,7 @@
 
 body {
   font-family: 'Space Grotesk', sans-serif;
+  color: var(--dark-brown);
 }
 
 .inactive {
@@ -32,6 +33,11 @@ body {
 
 .h2-titles {
   font-size: 3rem;
+  margin-bottom: 30px;
+  color: var(--dark-brown);
+}
+
+.h3-titles {
   margin-bottom: 30px;
   color: var(--dark-brown);
 }
@@ -268,7 +274,11 @@ header {
   padding: 4% 15%;
 }
 
-#about p {
+.about-text {
+  margin-bottom: 40px;
+}
+
+.about-text p {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 50px;
@@ -281,6 +291,39 @@ header {
   margin-left: 2%;
   margin-bottom: 2%;
 }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: row;
+  margin-top: 60px;
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.skills-item {
+  background-color: var(--light-yellow);
+  border: 1px solid var(--very-light-brown);
+  font-size: 22px;
+  padding: 4px 14px;
+  margin: 0 5px 14px 5px;
+  border-radius: 20px;
+}
+
+.skills-item:hover {
+  background-color: var(--bright-yellow);
+}
+
 
 /* Projects section */
 #projects {
@@ -320,11 +363,13 @@ header {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+
 }
 
 .project-card img:hover {
-  transform: scale(1.1) translateZ(0);
+  /* transform: scale(1.1) translateZ(0); */
+  background-color: var(--very-light-yellow);
 }
 
 .project-icons a {
@@ -456,5 +501,33 @@ footer {
   .menu ul li a:hover {
     background: none;
     color: var(--regular-brown);
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row;
+    margin-top: 40px;
+  }
+  
+  .skills-title {
+    text-align: start;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 0 0;
+  }
+  
+  .skills-item {
+    background-color: var(--light-yellow);
+    border: 1px solid var(--very-light-brown);
+    font-size: 22px;
+    padding: 4px 14px;
+    margin: 0 5px 14px 5px;
+    border-radius: 20px;
   }
 }
