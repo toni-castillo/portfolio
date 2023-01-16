@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header and navbar -->
   <header>
       <a href="/" class="logo">
-        <img src="./img/toni-castillo-logo-white.png" alt="Toni Castillo's logo">
+        <img src="./img/toni-castillo-logo.png" alt="Toni Castillo's logo">
       </a>
     <nav class="navbar">
       <div class="menu">
@@ -37,6 +38,7 @@
       </div> -->
     </nav>
   </header>
+
   <!-- Hello section -->
   <section id="home">
       <div class="home-container text-entry">
@@ -78,15 +80,48 @@
         </div>
       </div>
   </section>
+
   <!-- About section -->
   <section id="about">
-    <h2 class="h2-titles">Who I am?</h2>
+    <h2 class="h2-titles">About</h2>
     <img src="./img/photo.png" alt="Foto de Toni Castillo" class="about-img">
-    <p>I have been a <b>technology journalist for almost a decade</b> in media such as <i>Xataka</i> or <i>Genbeta</i>, in addition to having worked for an association of public transport companies, and recently decided to change profession and become a programmer.</p>
-    <p>I studied a <b>Full Stack Web Development bootcamp</b> at Codehouse Academy where I learned the foundations of <b>HTML and CSS</b>, programming with <b>JavaScript</b>, and worked with <b>Angular</b>. I also developed projects with <b>Node.js and Express</b>, worked with <b>MySQL and MongoDB databases</b>, used <b>version control with Git</b>, and applied <b>Scrum for agile development</b>.</p>
-    <p>My goal is <b>to continue learning and improving my skills as a developer, especially in the frontend field</b> with the technologies I have worked with, and to add value with my work.</p>
-    <p>I have <b>great skills in digital environments</b> due to my professional background and my love for technology, and experience in working remotely and as part of a team. I am curious, committed, optimistic and hardworking.</p>
+    <div class="about-text">
+      <p>I have been a <b>technology journalist for almost a decade</b> in media such as <i>Xataka</i> or <i>Genbeta</i>, in addition to having worked for an association of public transport companies, and recently decided to change profession and become a programmer.</p>
+      <p>I studied a <b>Full Stack Web Development bootcamp</b> at Codehouse Academy where I learned the foundations of <b>HTML and CSS</b>, programming with <b>JavaScript</b>, and worked with <b>Angular</b>. I also developed projects with <b>Node.js and Express</b>, worked with <b>MySQL and MongoDB databases</b>, used <b>version control with Git</b>, and applied <b>Scrum for agile development</b>.</p>
+      <p>My goal is <b>to continue learning and improving my skills as a developer, especially in the frontend field</b> with the technologies I have worked with, and to add value with my work.</p>
+      <p>I have <b>great skills in digital environments</b> due to my professional background and my love for technology, and experience in working remotely and as part of a team. I am curious, committed, optimistic and hardworking.</p>
+    </div>
+    <div class="skills-container">
+
+      <h3 class="h3-titles skills-title">Hard skills</h3>
+      <div class="skills">
+        <p class="skills-item">HTML</p>
+        <p class="skills-item">CSS</p>
+        <p class="skills-item">JavaScript</p>
+        <p class="skills-item">Typescript</p>
+        <p class="skills-item">Angular</p>
+        <p class="skills-item">Node.js</p>
+        <p class="skills-item">Backend knowledge</p>
+      </div>
+
+      <h3 class="h3-titles skills-title">Soft skills</h3>
+      <div class="skills">
+        <p class="skills-item">Adaptation</p>
+        <p class="skills-item">Creativity</p>
+        <p class="skills-item">Organization</p>
+        <p class="skills-item">Continuous learning</p>
+        <p class="skills-item">Attention to detail</p>
+        <p class="skills-item">Resilience</p>
+        <p class="skills-item">Teamwork</p>
+        <p class="skills-item">Remote work</p>
+        <p class="skills-item">Empathy</p>
+        <p class="skills-item">Communication</p>
+        <p class="skills-item">Perseverance</p>
+      </div>
+
+    </div>
   </section>
+
   <!-- Projects section -->
   <section id="projects">
     <h2 class="h2-titles">Projects</h2>
@@ -119,14 +154,14 @@
         <h3>Homepage of a lifestyle magazine</h3>
         <p>Responsive homepage of a fictitious lifestyle magazine created with HTML, CSS and, mainly, Bootstrap as practice exercise for the Bootstrap and Sass lessons.</p>
         <div class="project-icons">
-          <a href="https://github.com/toni-castillo/homepage-with-bootstrap" target="_blank">
+          <a href="https://toni-castillo.github.io/homepage-with-bootstrap/" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
               <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
             </svg>
           </a>
-          <a href="https://toni-castillo.github.io/homepage-with-bootstrap/" target="_blank">
+          <a href="https://github.com/toni-castillo/homepage-with-bootstrap" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -142,14 +177,14 @@
         <h3>Simple blog system with Angular</h3>
         <p>The objective of this exercise of the Angular module of my bootcamp was to develop a very simple blog system to understand some of the framework's functions.</p>
         <div class="project-icons">
-          <a href="https://github.com/toni-castillo/angularBlog" target="_blank">
+          <a href="https://toni-castillo.github.io/angularBlog/" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
               <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
             </svg>
           </a>
-          <a href="https://toni-castillo.github.io/angularBlog/" target="_blank">
+          <a href="https://github.com/toni-castillo/angularBlog" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -165,14 +200,14 @@
         <h3>Links page</h3>
         <p>Simple links website (like Linktree or similar services) developed using HTML, Tailwind and Vite to take a first look at these last two technologies.</p>
         <div class="project-icons">
-          <a href="https://github.com/toni-castillo/links-page-project" target="_blank">
+          <a href="http://links.tonicastillo.net/" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
               <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
             </svg>
           </a>
-          <a href="http://links.tonicastillo.net/" target="_blank">
+          <a href="https://github.com/toni-castillo/links-page-project" target="_blank">
             <svg width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -189,6 +224,7 @@
 
     
   </section>
+
   <!-- Contact section -->
   <section id="contact">
     <div class="contact-container">
@@ -228,6 +264,13 @@
       </div>
     </div>
   </section>
+
+  <!-- Back to top button -->
+  <svg id="back-to-top-btn" class="text-entry" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#977a38" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <polyline points="6 15 12 9 18 15" />
+  </svg>
+
   <!-- Footer -->
   <footer>
     <p>Made with ❤ by Toni Castillo | 2022-2023</p>
