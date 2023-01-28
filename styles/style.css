@@ -111,8 +111,8 @@ header {
   color: var(--dark-brown)
 } */
 
-/* Desktop menu */
-.desktop-menu ul {
+/* Menu */
+.menu ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -120,7 +120,7 @@ header {
   list-style: none;
 }
 
-.desktop-menu ul li a {
+.menu ul li a {
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -129,12 +129,19 @@ header {
   color: var(--dark-brown);
 }
 
-.desktop-menu ul li a:hover {
+.menu ul li a:hover {
   background: var(--very-light-brown);
   color: white;
 }
 
-/* Mobile menu */
+
+.menu ul li .lang-item:hover {
+  background: none;
+  color: var(--dark-brown);
+  font-weight: bolder;
+}
+
+/* Mobile menu icon */
 .mobile-menu-icon {
   display: none;
   cursor: pointer;
@@ -157,57 +164,6 @@ header {
 
 .change .bar-3 {
   transform: translate(0, -12px) rotate(45deg);
-}
-
-.mobile-menu {
-  position: absolute;
-  right: 40px;
-  top: 75px;
-  text-align: end;
-  background-color: var(--light-yellow);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.mobile-menu ul {
-  list-style: none;
-}
-
-.mobile-menu ul li {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: var(--dark-brown);
-}
-
-.mobile-menu ul li a:hover {
-  color: var(--regular-brown);
-}
-
-/* Menu */
-.menu ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-content: center;
-  list-style: none;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 4px;
-  color: var(--dark-brown);
-}
-
-.menu ul li a:hover {
-  background: var(--very-light-brown);
-  color: white;
 }
 
 /* Hello section */
@@ -364,7 +320,9 @@ header {
   max-width: 1200px;
 }
 
-.project-card img, h3, p {
+.project-card img, 
+.project-card h3, 
+.project-card p {
   margin-bottom: 10px;
 }
 
@@ -396,7 +354,6 @@ header {
 
 /* Contact section */
 #contact {
-  display: grid;
   font-size: 22px;
   font-size: xx-large;
   color: var(--regular-brown);
@@ -404,9 +361,18 @@ header {
   padding: 4% 15%;
 }
 
-/* .contact-container {
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
 
-} */
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact p:last-of-type {
+  margin-bottom: 20px;
+}
 
 
 /* Footer */
@@ -442,10 +408,6 @@ footer {
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
-
-  .mobile-menu {
-    display: none;
-  }
 }
 
 /* Styles for smartphones */
@@ -470,10 +432,6 @@ footer {
 
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
-  }
-
-  .desktop-menu {
-    display: none;
   }
 
   .mobile-menu-icon {
