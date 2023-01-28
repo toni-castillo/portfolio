@@ -111,83 +111,6 @@ header {
   color: var(--dark-brown)
 } */
 
-/* Desktop menu */
-.desktop-menu ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-content: center;
-  list-style: none;
-}
-
-.desktop-menu ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 4px;
-  color: var(--dark-brown);
-}
-
-.desktop-menu ul li a:hover {
-  background: var(--very-light-brown);
-  color: white;
-}
-
-
-/* Mobile menu */
-.mobile-menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.bar-1, .bar-2, .bar-3 {
-  width: 35px;
-  height: 4px;
-  background-color: #977a38;
-  margin: 8px 0;
-  border-radius: 2px;
-  transition: 0.4s;
-}
-
-.change .bar-1 {
-  transform: translate(0, 12px) rotate(-45deg);
-}
-
-.change .bar-2 {opacity: 0;}
-
-.change .bar-3 {
-  transform: translate(0, -12px) rotate(45deg);
-}
-
-.mobile-menu {
-  position: absolute;
-  right: 40px;
-  top: 75px;
-  text-align: end;
-  background-color: var(--light-yellow);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.mobile-menu ul {
-  list-style: none;
-}
-
-.mobile-menu ul li {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: var(--dark-brown);
-}
-
-.mobile-menu ul li a:hover {
-  color: var(--regular-brown);
-}
-
 /* Menu */
 .menu ul {
   display: flex;
@@ -216,6 +139,31 @@ header {
   background: none;
   color: var(--dark-brown);
   font-weight: bolder;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  width: 35px;
+  height: 4px;
+  background-color: #977a38;
+  margin: 8px 0;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.change .bar-1 {
+  transform: translate(0, 12px) rotate(-45deg);
+}
+
+.change .bar-2 {opacity: 0;}
+
+.change .bar-3 {
+  transform: translate(0, -12px) rotate(45deg);
 }
 
 /* Hello section */
@@ -460,10 +408,6 @@ footer {
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
   }
-
-  .mobile-menu {
-    display: none;
-  }
 }
 
 /* Styles for smartphones */
@@ -488,10 +432,6 @@ footer {
 
   .projects-container {
     grid-template-columns: 1fr; /* Una sola columna */
-  }
-
-  .desktop-menu {
-    display: none;
   }
 
   .mobile-menu-icon {
