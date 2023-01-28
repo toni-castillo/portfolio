@@ -104,6 +104,13 @@ header {
   max-height: 100%;
 }
 
+/* .title-header {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--dark-brown)
+} */
+
 /* Desktop menu */
 .desktop-menu ul {
   display: flex;
