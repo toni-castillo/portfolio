@@ -394,6 +394,10 @@ footer {
 }
 /* Styles for tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 20px 20px;
+  }
+
   #home, #about, #projects, #contact {
     padding: 4% 10%;
   }
@@ -412,6 +416,9 @@ footer {
 
 /* Styles for smartphones */
 @media (max-width: 767px) {
+  header {
+    padding: 20px 4%;
+  }
 
   .h3-titles {
     font-size: 2rem;
