@@ -364,7 +364,9 @@ header {
   max-width: 1200px;
 }
 
-.project-card img, h3, p {
+.project-card img, 
+.project-card h3, 
+.project-card p {
   margin-bottom: 10px;
 }
 
@@ -396,7 +398,6 @@ header {
 
 /* Contact section */
 #contact {
-  display: grid;
   font-size: 22px;
   font-size: xx-large;
   color: var(--regular-brown);
@@ -404,9 +405,18 @@ header {
   padding: 4% 15%;
 }
 
-/* .contact-container {
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
 
-} */
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact p:last-of-type {
+  margin-bottom: 20px;
+}
 
 
 /* Footer */
