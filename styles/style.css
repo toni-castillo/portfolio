@@ -134,6 +134,7 @@ header {
   color: white;
 }
 
+
 /* Mobile menu */
 .mobile-menu-icon {
   display: none;
@@ -208,6 +209,13 @@ header {
 .menu ul li a:hover {
   background: var(--very-light-brown);
   color: white;
+}
+
+
+.menu ul li .lang-item:hover {
+  background: none;
+  color: var(--dark-brown);
+  font-weight: bolder;
 }
 
 /* Hello section */
