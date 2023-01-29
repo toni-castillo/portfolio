@@ -423,9 +423,9 @@ footer {
   .h3-titles {
     font-size: 2rem;
   }
-  #home, #about, #projects, #contact {
+  #home, #about, #projects, #contact, footer {
     font-size: x-large;
-    padding: 4% 4%;
+    padding: 8% 4%;
   }
 
   .home-container {
