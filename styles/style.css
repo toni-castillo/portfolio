@@ -428,6 +428,10 @@ footer {
     padding: 4% 4%;
   }
 
+  .home-container {
+    font-size: x-large;
+  }
+
   #about p {
     margin-right: 0;
   }
@@ -448,7 +452,7 @@ footer {
   .menu {
     display: none;
     position: absolute;
-    right: 40px;
+    right: 20px;
     top: 75px;
     text-align: end;
     background-color: var(--light-yellow);
