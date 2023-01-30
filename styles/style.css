@@ -419,6 +419,10 @@ footer {
     grid-auto-flow: row;
     margin-top: 40px;
   }
+
+  footer {
+    padding: 4% 10%;
+  }
 }
 
 /* Styles for smartphones */
@@ -430,7 +434,13 @@ footer {
   .h3-titles {
     font-size: 2rem;
   }
-  #home, #about, #projects, #contact {
+
+  #home {
+    font-size: x-large;
+    padding: 4% 4%;
+  }
+
+  #about, #projects, #contact {
     font-size: x-large;
     padding: 8% 4%;
   }
