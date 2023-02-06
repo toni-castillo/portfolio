@@ -1,10 +1,24 @@
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
 const menu = document.querySelector('.menu');
-const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+const menuItems = document.querySelectorAll('.menu-item');
 const mediaQuery = window.matchMedia('(max-width: 767px)');
 const backToTopBtn = document.getElementById("back-to-top-btn");
 
 // Menu functions
+mediaQuery.addEventListener('change', toggleClassMobileMenuItem);
+
+function toggleClassMobileMenuItem(mediaQuery) {
+  if (mediaQuery.matches) {
+    menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener('click', useMobileMenu);
+    })
+  } else {
+    menuItems.forEach(function (menuItem) {
+      menuItem.removeEventListener('click', useMobileMenu);
+    })
+  }
+}
+
 mediaQuery.addEventListener('change', handleMediaQueryChange);
 
 handleMediaQueryChange(mediaQuery);
@@ -13,15 +27,10 @@ function handleMediaQueryChange(mediaQuery) {
   if (!mediaQuery.matches) {
     menu.classList.remove('active');
     mobileMenuIcon.classList.remove('change');
-    console.log('Hola ' + mediaQuery.matches);
   }
 }
 
 mobileMenuIcon.addEventListener('click', useMobileMenu);
-
-for (item of mobileMenuItems) {
-  item.addEventListener('click', useMobileMenu);
-}
 
 function useMobileMenu() {
   menu.classList.toggle('active');
