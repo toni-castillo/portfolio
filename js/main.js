@@ -5,6 +5,18 @@ const mediaQuery = window.matchMedia('(max-width: 767px)');
 const backToTopBtn = document.getElementById("back-to-top-btn");
 
 // Menu functions
+mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+handleMediaQueryChange(mediaQuery);
+
+function handleMediaQueryChange(mediaQuery) {
+  if (!mediaQuery.matches) {
+    menu.classList.remove('active');
+    mobileMenuIcon.classList.remove('change');
+    console.log('Hola ' + mediaQuery.matches);
+  }
+}
+
 mobileMenuIcon.addEventListener('click', useMobileMenu);
 
 for (item of mobileMenuItems) {
@@ -16,16 +28,6 @@ function useMobileMenu() {
   mobileMenuIcon.classList.toggle('change');
 }
 
-mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-handleMediaQueryChange(mediaQuery);
-
-function handleMediaQueryChange(mediaQuery) {
-  if (!mediaQuery.matches) {
-    menu.classList.remove('active');
-    mobileMenuIcon.classList.remove('change');
-  }
-}
 
 // Back to top button
 showBackToTopButton();
