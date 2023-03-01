@@ -8,12 +8,10 @@ const backToTopBtn = document.getElementById("back-to-top-btn");
 function toggleClassMobileMenuItem(mediaQuery) {
   if (mediaQuery.matches) {
     menuItems.forEach(function (menuItem) {
-      menuItem.addEventListener('touchstart', useMobileMenu);
       menuItem.addEventListener('click', useMobileMenu);
     });
   } else {
     menuItems.forEach(function (menuItem) {
-      menuItem.removeEventListener('touchstart', useMobileMenu);
       menuItem.removeEventListener('click', useMobileMenu);
     });
   }
