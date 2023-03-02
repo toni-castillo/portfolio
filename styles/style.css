@@ -488,6 +488,10 @@ footer {
     transform: none;
   }
 
+  .btn-project:hover {
+    background-color: var(--very-light-brown);
+  }
+
   .mobile-menu-icon {
     display: inline-block;
   }
