@@ -273,15 +273,10 @@ header {
 
 .skills-item {
   background-color: var(--light-yellow);
-  border: 1px solid var(--very-light-brown);
   font-size: 22px;
-  padding: 4px 14px;
-  margin: 0 5px 14px 5px;
-  border-radius: 20px;
-}
-
-.skills-item:hover {
-  background-color: var(--bright-yellow);
+  padding: 4px 12px;
+  margin: 0 6px 14px 6px;
+  border-radius: 4px;
 }
 
 
@@ -549,11 +544,10 @@ footer {
   
   .skills-item {
     background-color: var(--light-yellow);
-    border: 1px solid var(--very-light-brown);
     font-size: 22px;
-    padding: 4px 14px;
-    margin: 0 5px 14px 5px;
-    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 0 6px 14px 6px;
+    border-radius: 4px;
   }
 
   footer {
